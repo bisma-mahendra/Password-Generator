@@ -24,10 +24,10 @@ function getPassword(){
 }
 
 function savePassword(){
-    document.title = password.value;
+    let pass = password.value;
     let akun = account.value;
 
-    saveBtn.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(akun + ' ' + 'Password: ' + document.title));
+    saveBtn.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(akun + ' ' + 'Password: ' + pass));
     saveBtn.setAttribute('download', 'myPasswordGeneratorLOG.txt')
     setTimeout(() => {
         alert('Password anda berhasil disimpan');
