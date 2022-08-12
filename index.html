@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container flex-column d-flex justify-content-center align-items-center min-vh-100">
+        <div class="d-flex flex-column">
+            <h1 class="mb-4 fw-bolder">PASSWORD GENERATOR</h1>
+            <div class="mb-2 d-flex flex-column gap-2">
+                <label class="mb-2 fw-bold" for="passwordLength">Password Length</label>
+                <input class="form-control form-control-lg" id="passwordLength" type="number"/>
+
+                <label class="fw-bold" for="password">Account</label>
+                <input class="form-control form-control-lg " id="account" type="text" placeholder="eg. Ig, Facebook, Github"/>
+
+                <label class="fw-bold" for="password">Password</label>
+                <input class="form-control form-control-lg" id="password" type="password"/>
+
+                <button class="mt-2 btn btn-dark btn-lg fw-semibold text-uppercase" onclick="getPassword()">
+                    GENERATE PASSWORD
+                </button>
+                <a class="mt-2 btn btn-primary btn-lg fw-semibold text-uppercase" onclick="savePassword()" id="saveButton">
+                    SAVE PASSWORD
+                </a> 
+            </div>
+        </div>
+        <div class="position-absolute bottom-0 ">
+            <a href="https://www.linkedin.com/in/bismahendra/" target="_blank" class="text-decoration-none text-black text-opacity-75 fw-semibold"><p>@bismahendra</p></a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
