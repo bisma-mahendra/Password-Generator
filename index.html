@@ -4,38 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <title>Password Generator</title>
+
+    <title>Linktree</title>
+    <style>
+        .button{
+            background-color: white;
+            transition: .5s ease-out;
+            box-shadow: 3px 3px 0 #212529;
+            text-decoration: none;
+        }
+        .button:hover {
+            box-shadow: 6px 6px 0 #212529;
+        }
+        .linkedin  {
+            color: #0A66C2;
+        }
+        .linkedin:hover {
+            color: white;
+            background-color: #0A66C2;
+        }
+        .insta  {
+            color: rgb(225, 48, 108);
+        }
+        .insta:hover {
+            color: white;
+            background-color: rgb(225, 48, 108);
+        }
+        .youtube  {
+            color: #FF0000;
+        }
+        .youtube:hover {
+            color: white;
+            background-color: #FF0000;
+        }
+        .behance  {
+            color: #1769FF;
+        }
+        .behance:hover {
+            color: white;
+            background-color: #1769FF;
+        }
+        .github  {
+            color: #181717;
+        }
+        .github:hover {
+            color: #181717;
+            background-color: #adadad;
+        }
+        .dribbble  {
+            color: #EA4C89;
+        }
+        .dribbble:hover {
+            color: white;
+            background-color: #EA4C89;
+        }
+        .unsplash  {
+            color: #000000;
+        }
+        .unsplash:hover {
+            color: #000000;
+            background-color: #e7e7e7;
+        }
+        .generator  {
+            color: #7900ca;
+        }
+        .generator:hover {
+            color: #ffffff;
+            background-color: #7900ca;
+        }
+        .porto  {
+            color: #00aeda;
+        }
+        .porto:hover {
+            color: #ffffff;
+            background-color: #00aeda;
+        }
+        .logo  {
+            fill: #fff;
+            padding: 5px;            
+        }
+    </style>
 </head>
 <body>
-    <div class="container flex-column d-flex justify-content-center align-items-center min-vh-100">
-        <div class="d-flex flex-column">
-            <h1 class="mb-4 fw-bolder">PASSWORD GENERATOR</h1>
-            <div class="mb-2 d-flex flex-column gap-2">
-                <label class="mb-2 fw-bold" for="passwordLength">Password Length</label>
-                <input class="form-control form-control-lg" id="passwordLength" type="number"/>
-
-                <label class="fw-bold" for="password">Account</label>
-                <input class="form-control form-control-lg " id="account" type="text" placeholder="eg. Ig, Facebook, Github"/>
-
-                <label class="fw-bold" for="password">Password</label>
-                <input class="form-control form-control-lg" id="password" type="password"/>
-
-                <button class="mt-2 btn btn-dark btn-lg fw-semibold text-uppercase" onclick="getPassword()">
-                    GENERATE PASSWORD
-                </button>
-                
-                <a class="mt-2 btn btn-primary btn-lg fw-semibold text-uppercase" onclick="savePassword()" id="saveButton">
-                    SAVE PASSWORD
-                </a> 
-            </div>
+<div class="d-flex flex-column justify-content-center align-items-center min-vh-100 gap-3">
+        <div class="text-uppercase d-flex flex-column justify-content-center align-items-center">
+            <h1 class="">bismahendra linktree</h1>
         </div>
-        <div class="position-absolute bottom-0 ">
-            <a href="https://www.linkedin.com/in/bismahendra/" target="_blank" class="text-decoration-none text-black text-opacity-75 fw-semibold"><p>@bismahendra</p></a>
-        </div>
-    </div>
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="d-flex align-items-center justify-content-center gap-2 p-2 col-10 col-sm-6 col-lg-5 col-xl-4">
+            <a target="_blank" href="https://www.linkedin.com/in/bismahendra/" class=" linkedin button border rounded-2 border-2 border-dark ">
+                <div class="logo"><img src="logo/linkedin.svg" width="26" height="26" /></div>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/bismahendra/"
+            class=" linkedin w-100 btn button btn-lg fw-semibold rounded-2 border border-2 border-dark">
+                linkedin
+            </a>
+        </div> 
+        <a 
+        href="https://www.instagram.com/bismahendra_" 
+        class="button insta d-flex pink align-items-center justify-content-center gap-4
+         p-2 rounded-2 border border-2 border-dark col-8 col-sm-5 col-lg-4 col-xl-3" target="_blank">
+            <div class="logo"><img src="logo/instagram.svg" width="26" height="26" /></div>
+            <span class=" fw-semibold fs-5 text-center">
+                Instagram
+            </span>
+        </a>
+        <a 
+        href="https://www.behance.net/bismahendra" 
+        class="button behance d-flex pink align-items-center justify-content-center gap-4 p-2 rounded-2 border border-2 border-dark col-8 col-sm-5 col-lg-4 col-xl-3" target="_blank">
+            <div class="logo"><img src="logo/behance.svg" width="26" height="26" /></div>
+            <span class="fw-semibold fs-5 text-center">
+                Behance
+            </span>
+        </a> 
+        <a 
+        href="https://github.com/bisma-mahendra" 
+        class="button github d-flex pink align-items-center justify-content-center gap-4 p-2 rounded-2 border border-2 border-dark col-8 col-sm-5 col-lg-4 col-xl-3" target="_blank">
+            <div class="logo"><img src="logo/github.svg" width="26" height="26" /></div>
+            <span class="fw-semibold fs-5 text-center">
+                Github
+            </span>
+        </a> 
+        <a 
+        href="https://www.dribbble.com/bismahendra" 
+        class="button dribbble d-flex pink align-items-center justify-content-center gap-4 p-2 rounded-2 border border-2 border-dark col-8 col-sm-5 col-lg-4 col-xl-3" target="_blank">
+            <div class="logo"><img src="logo/dribbble.svg" width="26" height="26" /></div>
+            <span class="fw-semibold fs-5 text-center">
+                Dribbble
+            </span>
+        </a> 
+        <a 
+        href="https://unsplash.com/@bismamahendra07" 
+        class="button unsplash d-flex pink align-items-center justify-content-center gap-4 p-2 rounded-2 border border-2 border-dark col-8 col-sm-5 col-lg-4 col-xl-3" target="_blank">
+            <div class="logo"><img src="logo/unsplash.svg" width="26" height="26" /></div>
+            <span class="fw-semibold fs-5 text-center">
+                Unsplash
+            </span>
+        </a> 
+        <a 
+        href="https://www.youtube.com/channel/UCRBmZ8O96W5cV0HLfY4aPGQ" 
+        class="button youtube d-flex pink align-items-center justify-content-center gap-4 p-2 rounded-2 border border-2 border-dark col-8 col-sm-5 col-lg-4 col-xl-3" target="_blank">
+            <div class="logo"><img src="logo/youtube.svg" width="26" height="26" /></div>
+            <span class="fw-semibold fs-5 text-center">
+                Youtube
+            </span>
+        </a> 
+        <a 
+        href="https://bisma-mahendra.github.io/Linktree-Bismahendra/" 
+        class="button generator d-flex pink align-items-center justify-content-center gap-4 p-2 rounded-2 border border-2 border-dark col-8 col-sm-5 col-lg-4 col-xl-3" target="_blank">
+            <span class="fw-semibold fs-5 text-center">
+                Password Generator WEB
+            </span>
+        </a> 
+        <a 
+        href="https://bisma-mahendra.github.io/portfolio-tailwind-css/" 
+        class="button porto d-flex pink align-items-center justify-content-center gap-4 p-2 rounded-2 border border-2 border-dark col-8 col-sm-5 col-lg-4 col-xl-3" target="_blank">
+            <span class="fw-semibold fs-5 text-center">
+                Portfolio Website
+            </span>
+        </a> 
+</div>    
 </body>
 </html>
